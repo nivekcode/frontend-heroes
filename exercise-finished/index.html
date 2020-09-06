@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+    <title>Heroes page</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container background-image">
-
     <div class="hero">
-        <h1>Batman</h1>
+        <h1 id="hero-title">Batman</h1>
         <div class="hero-image-container">
-            <button class="change-hero-button"><</button>
-            <img src="batman.jpeg">
-            <button class="change-hero-button">></button>
+            <button id="previous-hero-btn" class="change-hero-button"><</button>
+            <img id="hero-image" src="batman.jpeg">
+            <button id="next-hero-btn" class="change-hero-button">></button>
         </div>
     </div>
-
 </div>
+<script src="main.js"></script>
 </body>
 </html>
