@@ -12,7 +12,7 @@ let selectedHero = 0;
 
 const updateHero = (index) => {
     heroTitle.innerText = heroes[index].name;
-    heroImage.src = heroes[index].image;
+    heroImage.src = `./assets/${heroes[index].image}`;
 };
 
 previousHeroBtn.addEventListener('click', function () {
