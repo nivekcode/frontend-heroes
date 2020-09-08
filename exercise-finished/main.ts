@@ -1,4 +1,9 @@
-const heroes = [
+interface Hero {
+    name: string;
+    image: string;
+}
+
+const heroes: Hero[] = [
     {name: 'Batman', image: 'batman.jpeg'},
     {name: 'Spiderman', image: 'spiderman.jpeg'},
     {name: 'Superman', image: 'superman.jpeg'}
@@ -12,8 +17,16 @@ let selectedHero = 0;
 
 const updateHero = (index: number) => {
     if (heroTitle && heroImage) {
+
         heroTitle.innerText = heroes[index].name;
         heroImage.src = `./assets/${heroes[index].image}`;
+        heroImage.classList.add('animate__animated', 'animate__flipInX');
+
+        setTimeout(() => {
+            heroImage.classList.remove('animate__animated');
+            heroImage.classList.remove('animate__flipInX');
+        }, 500);
+
     }
 };
 

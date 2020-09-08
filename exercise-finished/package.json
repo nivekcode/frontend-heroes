@@ -8,7 +8,8 @@
     "compile-ts": "tsc",
     "copy:html": "cpx index.html ./dist",
     "copy:css": "cpx main.css ./dist",
-    "copy:assets": "cpx './assets/*.jpeg' ./dist/assets",
+    "copy:assets": "cpx './assets/*.*' ./dist/assets",
+    "watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,9 @@
     "url": "https://github.com/kreuzerk/frontend-heroes/issues"
   },
   "homepage": "https://github.com/kreuzerk/frontend-heroes#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
   "devDependencies": {
     "cpx": "^1.5.0",
     "npm-run-all": "^4.1.5",
