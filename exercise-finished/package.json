@@ -29,9 +29,7 @@
     "url": "https://github.com/kreuzerk/frontend-heroes/issues"
   },
   "homepage": "https://github.com/kreuzerk/frontend-heroes#readme",
-  "dependencies": {
-    "animate.css": "^4.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "cpx": "^1.5.0",
     "node-sass": "^4.14.1",
