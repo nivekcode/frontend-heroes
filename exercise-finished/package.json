@@ -4,12 +4,14 @@
   "description": "Page that displays different heroes",
   "main": "main.js",
   "scripts": {
-    "build": "npm-run-all copy:html copy:css compile-ts copy:assets",
+    "build": "npm-run-all build:* copy",
+    "build:ts": "tsc --project tsconfig.prod.json",
+    "build:scss": "node-sass ./main.scss ./dist/main.css",
     "watch": "npm-run-all -p watch:*",
     "watch:compile-ts": "tsc -w",
     "watch:compile-sass": "node-sass ./main.scss ./main.css -w",
+    "copy": "npm-run-all copy:*",
     "copy:html": "cpx index.html ./dist",
-    "copy:css": "cpx main.css ./dist",
     "copy:assets": "cpx './assets/*.*' ./dist/assets",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
