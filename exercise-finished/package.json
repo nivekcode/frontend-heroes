@@ -13,7 +13,8 @@
     "copy": "npm-run-all copy:*",
     "copy:html": "cpx index.html ./dist",
     "copy:assets": "cpx './assets/*.*' ./dist/assets",
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
