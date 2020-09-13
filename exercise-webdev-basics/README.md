@@ -31,12 +31,7 @@ Let's start by creating an HTML page.
 11. Finally we are going to add the next button. The next button is a `<button>` tag with the `id` set to `next-hero-btn`. Furthermore we use `">"` as text content and `change-hero-btn` as class.
 12. Great! We created our HTML page. By now, your HTML should look like this:
 
-```
-<details>
-<summary>I could use some help...</summary>
-<p>
-
-​```html#
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -55,8 +50,9 @@ Let's start by creating an HTML page.
 </main>
 </body>
 </html>
-\```
-
-</p>
-</details>
 ```
+
+## CSS
+
+So far, our page has a base structure. But let's be honest, it doesn't really look that great. Let's change that by adding some Styles to it.
+
