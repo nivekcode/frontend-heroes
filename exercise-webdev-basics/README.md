@@ -56,3 +56,36 @@ Let's start by creating an HTML page.
 
 So far, our page has a base structure. But let's be honest, it doesn't really look that great. Let's change that by adding some Styles to it.
 
+1. Let's create a new `styles.css` file.
+
+2. Before adding styles we first need to add it to our HTML page. To do so, we add the following content inside the `<head>` tag of our page.
+
+   ```html
+   <link rel="stylesheet" href="styles.css">
+   ```
+
+   
+
+3. Lets first target our `<html>` and `<body>` element and set the `height` to `100%` and the `margin` to `0`.
+
+4. Next, let's target the `main` and add the following styles:
+
+   ```css
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+   
+     background-image: url("assets/background.png");
+     height: 100%;
+   
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+   ```
+
+   Open up the page, what happened, why? What does the clip-path property do?
+
+5. We added a background image. But our hero still looks way to big. Let's change that. Let's query the image by using the following nested selector `.hero-image-container img`.
+
