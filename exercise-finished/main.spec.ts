@@ -5,31 +5,50 @@ describe('hero app', () => {
     describe('Selection', () => {
 
         it('should select the previous hero', () => {
-            // @ts-ignore
-            sut.selectedHero = 1;
+            sut.heroState.selectedHeroIndex = 1;
             sut.selectPreviousHero();
-            expect(sut.selectedHero).toBe(0);
+            expect(sut.heroState.selectedHeroIndex).toBe(0);
         });
 
         it('should select the last hero if the first one is currently selected', () => {
-            // @ts-ignore
-            sut.selectedHero = 0;
+            sut.heroState.selectedHeroIndex = 0;
             sut.selectPreviousHero();
-            expect(sut.selectedHero).toBe(sut.heroes.length - 1);
+            expect(sut.heroState.selectedHeroIndex).toBe(sut.heroes.length - 1);
         });
 
         it('should select the next hero', () => {
-            // @ts-ignore
-            sut.selectedHero = 1;
+            sut.heroState.selectedHeroIndex = 1;
             sut.selectNextHero();
-            expect(sut.selectedHero).toBe(2);
+            expect(sut.heroState.selectedHeroIndex).toBe(2);
         });
 
         it('should select the first hero if the last one is currently selected', () => {
             // @ts-ignore
             sut.selectedHero = sut.heroes.length - 1;
             sut.selectNextHero();
-            expect(sut.selectedHero).toBe(0);
+            expect(sut.heroState.selectedHeroIndex).toBe(0);
+        });
+
+    });
+
+    describe('update Hero', () => {
+
+        it('should set the innerText of the heroTitle element to Spiderman if the index is 1', () => {
+            const heroImage = {} as HTMLImageElement;
+            const heroTitle = {innerText: ''} as HTMLTitleElement;
+            sut.heroState.selectedHeroIndex = 1;
+
+            sut.updateHero(heroImage, heroTitle);
+            expect(heroTitle.innerText).toBe('Spiderman');
+        });
+
+        it('should set the src of the heroImage element to "assets/spiderman.jpeg" if the index is 1', () => {
+            const heroImage = {src: ''} as HTMLImageElement;
+            const heroTitle = {} as HTMLTitleElement;
+            sut.heroState.selectedHeroIndex = 1;
+
+            sut.updateHero(heroImage, heroTitle);
+            expect(heroImage.src).toBe('./assets/spiderman.jpeg');
         });
 
     });
