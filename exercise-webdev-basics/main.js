@@ -74,3 +74,7 @@ const updateHero = () => {
  Hint: addEventListener('click', selectNextHero);
  */
 updateHero();
+/*
+  TODO 13: Check out the result. You should now be able to change
+  the hero by clicking on the previous and next button.
+ */

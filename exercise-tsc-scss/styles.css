@@ -1,0 +1,94 @@
+/*
+    TODO 1: create a variable for the following colors:
+    - $basic-color: #FFFFFF;
+    - $primary-color: #1C8188;
+    - $secondary-color: #D9D9D9;
+*/
+
+/*
+    TODO 2: Replace all the colors in the files with the variables:
+    - for example color: #FFFFFF becomes color: $basic-color
+ */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("assets/background.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/*
+    TODO 3: Instead of combined selector we can now use nesting.
+      Let's nest the h1 into the .hero element
+    .hero {
+        h1 ...
+    }
+ */
+.hero h1 {
+    margin-top: 0;
+
+    color: #FFFFFF;
+    font-size: 120px;
+    font-family: "Marvel", sans-serif;
+}
+
+.hero-image-container {
+    display: flex;
+    align-items: center;
+}
+/*
+    TODO 4: Use nesting and add the img styles inside the .hero-image-container
+ */
+.hero-image-container img {
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #1C8188;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 450px;
+    width: 450px;
+}
+
+.change-hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    background: #1C8188;
+    opacity: 80%;
+    outline: none;
+}
+
+/*
+    TODO 5: Here we can use nesting again. But additionally we need to use the Saas parent selector (&) here.
+    The & selector makes it possible to reuse the outer selector. In our case we should refactor it to
+    &:hover.
+ */
+
+.change-hero-btn:hover {
+    background: #FFFFFF;
+    color: #1C8188;
+}
+
