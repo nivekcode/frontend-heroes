@@ -3,5 +3,7 @@ coverage/
 dist/
 .idea/
 
-main.css
 main.js
+main.js.map
+styles.css
+styles.css.map
