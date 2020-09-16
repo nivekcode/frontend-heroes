@@ -23,6 +23,8 @@ Let's start by converting our CSS to SCSS.
 
 ## TypeScript
 
+## Compile TypeScript to JavaScript
+
 Let's take advantage and Tpyes. Let's convert our project to TypeScript.
 
 1. Rename our `main.js` file to `main.ts`.
@@ -46,4 +48,3 @@ Let's take advantage and Tpyes. Let's convert our project to TypeScript.
 6. This command generates a `main.js`. Note: Some editors don't display this file indvidually, someties an arrow appears next to the `main.ts` that allows you to expand and see the `main.js`. Check out the content of the `main.js`. How does it look like? What happened to our `const` statements?
 
 7. Check out the showcase which now works again because he references the generated `main.js` file. 
-
