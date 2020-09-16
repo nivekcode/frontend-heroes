@@ -1,4 +1,4 @@
-# NPM Scripts
+# NPM Scripts - watch script
 
 So far we have created a HTML page, learned how to use the dev tools and how to use TypeScript and Saas. In this exercise we are going to automate this things with the help of npm scripts.
 
