@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all build:* copy",
     "build:ts": "tsc --project tsconfig.prod.json",
-    "build:scss": "node-sass ./styles.scss ./dist/styles.css",
+    "build:scss": "sass ./styles.scss ./dist/styles.css",
     "watch": "npm-run-all -p watch:*",
     "watch:compile-ts": "tsc -w",
     "watch:compile-sass": "sass --watch ./styles.scss ./styles.css",
