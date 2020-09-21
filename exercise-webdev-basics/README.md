@@ -20,7 +20,7 @@ Let's start by creating an HTML page. We allready created an `index.html` . Head
 
 ## CSS
 
-At this point our page allready has some styles but the layout is not yet correct. Let's use some flexbox to fix this. Also we will use the CSS `:hover` selector to change the hover styles of our button. Again, go through the `TODO` items. Once finished come back and continue with the JavaScript section.
+At this point our page already has some styles, but the layout is not yet correct. Let's use some flexbox to fix this. Also, we will use the CSS `:hover` selector to change the hover styles of our button. Again, open `styles.css` file go through the `TODO` items. Once finished come back and continue with the JavaScript section.
 
 ## JavaScript
 
