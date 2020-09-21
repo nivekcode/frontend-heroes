@@ -59,7 +59,7 @@ main {
 /*
     TODO 4: Use nesting and add the img styles inside the .hero-image-container.
      .hero-image-container {
-        image ...
+        img ...
     }
  */
 .hero-image-container img {
@@ -90,7 +90,9 @@ main {
 /*
     TODO 5: Here we can use nesting again. But additionally we need to use the Saas parent selector (&) here.
     The & selector makes it possible to reuse the outer selector. In our case we should refactor it to
-    "&:hover".
+    "&:hover". This means that the styles will apply to the parent selector WITH (&) the nested selector
+    so in the browser the styles will apply to a element with ".change-hero-btn" class
+    which was hovered ":hover" by the user...
  */
 
 .change-hero-btn:hover {

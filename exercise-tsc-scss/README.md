@@ -11,25 +11,37 @@ experience and productivity, but they are *never** used directly in runtime.
 
 Let's start by converting our `SCSS` to `CSS`.
 
-1. Rename the `styles.css` to `styles.scss`.
+1. Rename the `styles.css` to `styles.scss`. 
+   Make sure you do NOT rename any other references to that file in other files 
+   in case you are using more powerful editor...
 
 2. Follow the `TODO` items in the `styles.scss`.
 
-3. Maybe you noticed that we broke the application. If you run the `index.html` at this point it will not work. That's because `SCSS` doesn't run in the browser. To fix it we need to compile it to `CSS`. To do so we are going to use a preprocessor. Open up a terminal of your choice and navigate to the current directory and type the following.
+3. Maybe you noticed that we broke the application.
+   If you run the `index.html` at this point it will not work. 
+   That's because `SCSS` doesn't run in the browser. 
+   To fix it we need to compile it back to `CSS`. 
+   We will do it with the help of Sass preprocessor.
+   Open up a terminal of your choice and navigate to the current exercise directory (`exercise-tsc-scss`) 
+   directory and run the following command...
 
    ```
    npx sass styles.scss styles.css
    ```
 
-   >Don't worry if this command is new to you - we will explore this in the next section
+   > Don't worry if this command is new to you - we will explore this in the next section
 
-4. Executing the previous command adds a `styles.css` files. Note: Some editors don't display this file indvidually, someties an arrow appears next to the `styles.scss` that allows you to expand and see the `styles.css`. Check out the generated `styles.css` file.
+4. Executing the previous command creates a new `styles.css` file. 
+   Note: Some editors don't display this file individually, sometimes an arrow appears next to the 
+   `styles.scss` file that allows you to expand and see the newly generated `styles.css`.
+   Find and check out the content of generated `styles.css` file.
+   
+   > Notice how advanced concepts like variables and nesting were compiled back to simpler form
+   like inline values and selector chaining...
 
 5. Refresh the `HTML` page and check out the showcase which now works again because he references the generated `styles.css` file. 
 
-   
-
-   Great - we successfully converted our `SCSS` to `CSS` and compiled it back to `CSS`.
+#### Great, we successfully converted our `CSS` source code to `SCSS` and compiled it back to `CSS` to be able to run it in the browser !
 
 
 
