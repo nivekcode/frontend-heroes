@@ -61,6 +61,7 @@ main {
     background: #1C8188;
     opacity: 80%;
     outline: none;
+    cursor: pointer;
 }
 
 /* TODO 9: use the ":hover" css pseudo-selector to change the styles when
