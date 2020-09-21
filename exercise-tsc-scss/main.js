@@ -1,12 +1,18 @@
 /*
     TODO 1: Create a TypeScript "Hero" interface.
-    Each hero should have the following properties.
-    name: string;
-    image: string;
+    The "interface" defines the two properties.
+    {
+        name: string;
+        image: string;
+    }
  */
 
 /*
-    TODO 2: type the hero constants to be of type Hero[]
+    TODO 2: type the hero constants to be of type Hero[] (const heroes: []Hero = ...)
+ */
+/*
+    TODO 3: Once you typed the heroes constant try to remove the image from Batman. Check out the
+    error message your editor is displaying.
  */
 const heroes = [
     {name: 'Batman', image: 'batman.jpeg'},
@@ -14,20 +20,22 @@ const heroes = [
     {name: 'Superman', image: 'superman.jpeg'}
 ];
 
-const previousHeroBtn = document.getElementById('previous-hero-btn');
-const nextHeroBtn = document.getElementById('next-hero-btn');
+const previousHeroBtn = document.querySelector('#previous-hero-btn');
+const nextHeroBtn = document.querySelector('#next-hero-btn');
 /*
-    TODO 3: Use the "as" operator to cast the heroImage to HTMLImageElement
+    TODO 4: Use the "as" operator to cast the heroImage to HTMLImageElement.
+    This cast gives us better Type assertion and more detailed autocompletion
  */
-const heroImage = document.getElementById('hero-image');
+const heroImage = document.querySelector('#hero-image');
 /*
-    TODO 4: Use the "as" operator to cast the heroTitle to HTMLTitleElement
+    TODO 5: Use the "as" operator to cast the heroTitle to HTMLTitleElement
+    This cast gives us better Type assertion and more detailed autocompletion
  */
-const heroTitle = document.getElementById('hero-title');
+const heroTitle = document.querySelector('#hero-title');
 
 /*
-    TODO 5: Here we don't need to add the type since TypeScript is able
-     to automatically infer the type
+    TODO 6: Here we don't need to add the type since TypeScript is able
+     to automatically infer the "number" type.
  */
 let selectedHeroIndex = 0;
 
@@ -51,17 +59,17 @@ const updateHero = () => {
 };
 
 /*
-    TODO 6: Use optional chaining (the ? operator) to ensure handle the case that
-    the previousHeroBtn is null
+    TODO 7: Use optional chaining (the ? operator) to ensure handle the case that
+    the "previousHeroBtn" is not "null".(previousHeroBtn?.addEventListener...)
  */
-previousHeroBtn?.addEventListener('click', selectPreviousHero);
+previousHeroBtn.addEventListener('click', selectPreviousHero);
 /*
     TODO 7: Use optional chaining (the ? operator) to ensure handle the case that
-    the previousHeroBtn is null
+    the "nextHeroBtn" is not null (nextHeroBtn?.addEventListener...)
  */
-nextHeroBtn?.addEventListener('click', selectNextHero);
+nextHeroBtn.addEventListener('click', selectNextHero);
 updateHero();
 
 /*
-    TODO 8: Head back to the README.md
+    TODO 8: Hop back to the README.md and continue with the next steps.
  */

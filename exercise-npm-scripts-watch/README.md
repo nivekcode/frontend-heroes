@@ -1,10 +1,10 @@
 # NPM Scripts - watch script
 
-So far we have created a HTML page, learned how to use the dev tools and how to use TypeScript and Saas. In this exercise we are going to automate this things with the help of npm scripts.
+So far we have created a `HTML` page, learned how to use the dev tools and how to use `TypeScript` and `Saas`. In this exercise we are going to automate this things with the help of `npm` scripts.
 
-The exercise setup has now two additional files. A `tsconfig.json` and a `tsconfig.prod.json`.  Previously we ran the `tsc` command. When running the `tsc` command a default rule set is applied. A `tsconfig` gives us the opportunity to apply some custom rules. We created a `tsconfig.json` that contains a set of base rules and will be used during development and a `tscongif.json` that will be used during a production build.
+The exercise setup has now two additional files. A `tsconfig.json` and a `tsconfig.prod.json`.  Previously we ran the `tsc` command. When running the `tsc` command a default rule set is applied. A `tsconfig` gives us the opportunity to apply some custom rules.
 
-1. Let's use npm in our repository. Open up a terminal of your choice, change to the current directory and run the following command.
+1. Let's use `npm` in our repository. Open up a terminal of your choice, change to the current directory and run the following command.
 
    ```
    npm init
@@ -18,7 +18,7 @@ The exercise setup has now two additional files. A `tsconfig.json` and a `tsconf
 
 ## Creating a watch task for development
 
-Currently developing our page with Saas and TypeScript is pretty cumbersome. Everytime we change something in Saas or TypeScript we need to recompile. Wouldn't it be nice if this happens automatically. It would and we will do so.
+Currently developing our page with `Saas` and `TypeScript` is pretty cumbersome. Everytime we change something in `Saas` or `TypeScript` we need to recompile. Wouldn't it be nice if this happens automatically. It would and we will do so.
 
 ## Creating a watch task for Saas
 
@@ -46,13 +46,13 @@ Currently developing our page with Saas and TypeScript is pretty cumbersome. Eve
 
 ## Creating a watch task for TypeScript
 
-1. In order to be able to compile TypeScript to JavaScript we need to install TypeScript first.
+1. In order to be able to compile `TypeScript` to `JavaScript` we need to install `TypeScript` first.
 
    ```
    npm i -D typescript
    ```
 
-   Remember, Typescript doesn't exist during runtime only during build and edit time. Therefore its just a dev dependency and not a normal dependency.
+   Remember, `Typescript` doesn't exist during runtime only during build and edit time. Therefore its just a dev dependency and not a normal dependency.
 
 2. Let's now create a new npm script called `watch:compile-ts`.  And add the following content `tsc -w`. The `-w` flag is short for `watch` and tells `tsc` to run in watch mode.
 
@@ -74,7 +74,7 @@ Currently we always need to open up one terminal and run `npm run watch:compile-
    npm i -D npm-run-all
    ```
 
-2. Let's create a new script called `watch`. We can now use `npm-run-all` with the `-p` (parallel) flag. We need to run the scripts in parallel since both do not finish and just listen for change. If we would run them sequential the second script would never be executed. Since we nicely named our watch scripts we can use the start to run all `watch` scripts. So the content of our watch script will look like this: `npm-run-all -p watch:*`.
+2. Let's create a new script called `watch`. We can now use `npm-run-all` with the `-p` (parallel) flag. We need to run the scripts in parallel since both do not finish and just listen for change. If we would run them sequential the second script would never be executed. Since we used a consistent naming for our watch scripts we can use the `*` to run all `watch` scripts. So the content of our watch script will look like this: `npm-run-all -p watch:*`.
 
 3. Run the watch script from the terminal. `npm run watch`.
 
