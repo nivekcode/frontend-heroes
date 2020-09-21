@@ -1,23 +1,24 @@
 /*
     Todo 1: Create an array of hero objects.
-    Each hero is an object containing a name and an image.
-    The name is the title that will be displayed and the image is the name of the image.
+    Each hero is an object containing a "name" and an "image" properties.
+    The "name" is the title that will be displayed to the users
+    and the "image" which should contain the full image file name (they can be found in the "assets/" folder).
  */
 const heroes = [];
 
 /*
-    TODO 2: Use document.getElementById() to query the 'previous-hero-btn'
+    TODO 2: Use document.querySelector() to query the button with 'previous-hero-btn' id (hint: id selectors are prefixed with #)
  */
 const previousHeroBtn = 'REPLACE_ME';
 /*
-    TODO 3: Use document.getElementById() to query the 'next-hero-btn'
+    TODO 3: Use document.querySelector() to query the button with 'next-hero-btn' id (hint: id selectors are prefixed with #)
  */
 const nextHeroBtn = 'REPLACE_ME';
-/* TODO 4: Use document.getElementById() to query the 'hero-image'
+/* TODO 4: Use document.querySelector() to query the element with 'hero-image' id (hint: id selectors are prefixed with #)
  */
 const heroImage = 'REPLACE_ME';
 /*
-    TODO 5: Use document.getElementById() to query the 'hero-title'
+    TODO 5: Use ocument.querySelector() to query the the element 'hero-title' id
  */
 const heroTitle = 'REPLACE_ME';
 
@@ -27,7 +28,7 @@ let selectedHeroIndex = 'REPLACE_ME';
 const selectPreviousHero = () => {
     /* TODO 7: This method is called when we click the previous button.
         Once the button is clicked we need to adjust the selectedHeroIndex
-        based on the following cirteria:
+        based on the following criteria:
 
         1. If the selectedHeroIndex is 0 it should be set to the
         last index of the hero array
@@ -39,7 +40,7 @@ const selectPreviousHero = () => {
 
 const selectNextHero = () => {
     /* TODO 8: This method is called when we click the next button.
-        Once the button is clicked we need to adjust the selectedHeroIndex based on the following cirteria:
+        Once the button is clicked we need to adjust the selectedHeroIndex based on the following criteria:
 
         1. If the selectedHeroIndex is equal to the last last index of the hero
         array we should set it to 0
@@ -52,29 +53,32 @@ const selectNextHero = () => {
 
 const updateHero = () => {
     /*
-        TODO 9: set the innerText of the heroTitle to the name of the hero at the
-         selectedHeroIndex position.
+        TODO 9: set the "innerText" property of the element previously stored "heroTitle" variable
+         to the name of the hero at the selectedHeroIndex position.
      */
     /*
-        TODO 10: set the src of the heroImage to the name of the hero
-         at the selectedHeroIndex position. Also use string concatination
-         to prefix the value with './assets'
+        TODO 10: set the "src" of the "heroImage" to the value of the "image" property value
+         of the hero object (stored in the "heroes" array)
+         at the "selectedHeroIndex" index. Also use string concatenation
+         to prefix the "image" value with './assets' (to get the full path to the image)
      */
 };
 
 /*
- TODO 11: use the addEventListeners method on the previousHeroBtn
- to register the selectPreviousHero as a click handler.
+ TODO 11: use the "addEventListener" method on the element
+ previously stored in the "previousHeroBtn" variable
+ to register the "selectPreviousHero" function as a click handler.
  Hint: addEventListener('click', selectPreviousHero);
  */
 
 /*
- TODO 12: use the addEventListeners method on the nextHeroBtn
+ TODO 12: use the "addEventListener" method on the element
+ previously stored in the "nextHeroBtn" variable
  to register the selectNextHero as a click handler.
  Hint: addEventListener('click', selectNextHero);
  */
 updateHero();
 /*
-  TODO 13: Check out the result. You should now be able to change
-  the hero by clicking on the previous and next button.
+  TODO 13: Check out the result in the browser. You should now be able to change
+  the displayed hero by clicking on the previous and next button.
  */

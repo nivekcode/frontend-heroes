@@ -5,9 +5,9 @@ body, html {
 
 main {
     /* TODO 1: convert this container into a flex container*/
-    /* TODO 2: align the items on the cross-axis to beginn at the start*/
+    /* TODO 2: align the items on the cross-axis (vertical) to begin at the start*/
     /* TODO 3: center the content horizontally across the main axis*/
-    /* TODO 4: check out the result*/
+    /* TODO 4: check out the result in the browser*/
 
     background-image: url("assets/background.png");
     height: 100%;
@@ -21,7 +21,7 @@ main {
     /* TODO 5: convert this element into a flex container */
     /* TODO 6: change the flex direction to column */
     /* TODO 7: use align-items to center the flex children */
-    /* TODO 8: check out the result*/
+    /* TODO 8: check out the result in the browser*/
 
     margin-top: 50px;
 }
@@ -63,8 +63,9 @@ main {
     outline: none;
 }
 
-/* TODO 9: use the hover state to change the styles when a button is hovered
-    - adjust the styles in a way that the button uses a white background and
-    #1C8188 as color*/
-/* TODO 10: run the application and hover a button to see the effect*/
-/* TODO 11: Go back to the README.md*/
+/* TODO 9: use the ":hover" css pseudo-selector to change the styles when
+   a button  with ".change-hero-btn" class is hovered by the user
+
+   - adjust the styles in a way that the button uses a white background and #1C8188 as color*/
+/* TODO 10: check out the result in the browser*/
+/* TODO 11: go back to the README.md and continue with the JavaScript section */
