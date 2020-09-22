@@ -69,13 +69,12 @@ Let's take advantage and Tpyes. Let's convert our project to `TypeScript`.
 
    
 
-   Great - we successfully converted our `JavaScript ` to `TypeScript` and compiled it back to `JavaScript`.
+#### Great, we successfully converted our `JavaScript ` to `TypeScript` to get all the safety and convenience and compiled it back to `JavaScript` to be able to run it in our browser.
 
 
 
 
-
-#### Footnotes
+##### Footnotes
 
   * there is a pure Typescript runtime called [deno](https://deno.land/) but for most purposes and in foreseeable 
     future we're always going to compile Typescript into JavaScript to run it in the browser (or node.js)
