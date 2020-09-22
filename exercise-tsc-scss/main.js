@@ -1,18 +1,18 @@
 /*
     TODO 1: Create a TypeScript "Hero" interface.
-    The "interface" defines the two properties.
-    {
-        name: string;
-        image: string;
-    }
+    The "interface" defines the two properties, the "name" and "image" properties
+    both of which should be of type "string"...
  */
 
 /*
-    TODO 2: type the hero constants to be of type Hero[] (const heroes: []Hero = ...)
+    TODO 2: type the hero constants to be of type Hero[] (const heroes: Hero[] = ...)
+    which will enforce that we will be storing an array fo heroes in our constant
  */
+
 /*
-    TODO 3: Once you typed the heroes constant try to remove the image from Batman. Check out the
-    error message your editor is displaying.
+    TODO 3: Once you typed the heroes constant try to remove the "image" property
+    from object describing Batman hero. Check out the new error message in your editor
+    (the Batman object should have red underline) and fix it...
  */
 const heroes = [
     {name: 'Batman', image: 'batman.jpeg'},
@@ -25,6 +25,7 @@ const nextHeroBtn = document.querySelector('#next-hero-btn');
 /*
     TODO 4: Use the "as" operator to cast the heroImage to HTMLImageElement.
     This cast gives us better Type assertion and more detailed autocompletion
+    The reason for this is that by default the "querySelector" gives us just generic "Element"
  */
 const heroImage = document.querySelector('#hero-image');
 /*
@@ -59,13 +60,13 @@ const updateHero = () => {
 };
 
 /*
-    TODO 7: Use optional chaining (the ? operator) to ensure handle the case that
-    the "previousHeroBtn" is not "null".(previousHeroBtn?.addEventListener...)
+    TODO 7: Use optional chaining (the ? operator) to make sure that we handle case
+    if the "previousHeroBtn" was "null".(previousHeroBtn?.addEventListener...)
  */
 previousHeroBtn.addEventListener('click', selectPreviousHero);
 /*
-    TODO 7: Use optional chaining (the ? operator) to ensure handle the case that
-    the "nextHeroBtn" is not null (nextHeroBtn?.addEventListener...)
+    TODO 7: Use optional chaining (the ? operator) o make sure that we handle case
+    if the "nextHeroBtn" was "null" (nextHeroBtn?.addEventListener...)
  */
 nextHeroBtn.addEventListener('click', selectNextHero);
 updateHero();
