@@ -57,10 +57,10 @@ Let's take advantage and Tpyes. Let's convert our project to `TypeScript`.
 
 3. Again, we broke our application. Remember, `TypeScript` doesn't run in the browser but `JavaScript` does. Similar to `SCSS` we need to Compile our `TypeScript` to `JavaScript`. To do so, we open up a terminal of our choice and change to the current directory.
 
-4. Here we use `npx` to run `tsc` to compile our `TypeScript` file to `JavaScript`. 
+4. Here we use `npx` to run the `tsc` bin from the `TypeScript` package to compile our `TypeScript` file to `JavaScript`. 
 
    ```
-   npx tsc main.ts
+   npx -p typescript tsc main.ts
    ```
 
 5. This command generates a `main.js`. Note: Some editors don't display this file indvidually, someties an arrow appears next to the `main.ts` that allows you to expand and see the `main.js`. Check out the content of the `main.js`. How does it look like? What happened to our `const` statements?
