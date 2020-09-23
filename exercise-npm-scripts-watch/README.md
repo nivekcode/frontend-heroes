@@ -1,10 +1,10 @@
 # NPM Scripts - watch script
 
 So far we have created a `HTML` page, learned how to use the dev tools 
-and how to ,manually use `TypeScript` and `Saas`. In this exercise we are going to 
+and how to ,manually use `TypeScript` and `Sass`. In this exercise we are going to 
 automate these things with the help of `npm` scripts.
 
-The exercise setup has now two additional files - `tsconfig.json` and `tsconfig.prod.json` files.  
+The exercise setup has now an additional file - `tsconfig.json`.  
 Previously we ran the `tsc` command with the help of `npx` which downloads and executes package on demand. 
 Because we ran the `tsc` command without any parameters, a default rule set was applied behind the scenes. 
 The `tsconfig.json` file gives us the opportunity to customize Typescript compiler options to better suit our needs.
@@ -25,15 +25,15 @@ The `tsconfig.json` file gives us the opportunity to customize Typescript compil
 
 ## Creating a watch task for development
 
-Currently, developing our page with `Saas` and `TypeScript` is pretty cumbersome. 
-Everytime we change something in `Saas` or `TypeScript` we need to recompile. 
+Currently, developing our page with `Sass` and `TypeScript` is pretty cumbersome. 
+Every time we change something in `Sass` or `TypeScript` we need to recompile. 
 Wouldn't it be better if this happened automatically? 
 
 > It would and we will make it happen!
 
-## Creating a watch task for Saas
+## Creating a watch task for Sass
 
-1. In order to be able to compile Saas we need to install `sass` first. 
+1. In order to be able to compile Sass we need to install `sass` first. 
    The `sass` is only used during development and not during production therefore 
    we are going to install it with the `-D` flag will add it to `devDependencies` (instead of `dependencies`).
 
@@ -49,16 +49,16 @@ Wouldn't it be better if this happened automatically?
 3. Open up a terminal and type
 
    ```
-   npm run watch:compile-saas
+   npm run watch:compile-sass
    ```
 
    We are running the previously generated npm script which will compile our `SCSS` file into a `CSS` file. 
 
-4. Open our webpage (`index.html`) file in the browser. The styles should work properly!
+4. Open our web page (`index.html`) file in the browser. The styles should work properly!
 
 5. Change a color in the `SCSS` file and save it in your editor. 
 
-6. Refresh the webpage in the browser - what happened?
+6. Refresh the web page in the browser - what happened?
 
 ## Creating a watch task for TypeScript
 
@@ -73,28 +73,28 @@ Wouldn't it be better if this happened automatically?
     Because of that, we have to compile it back to `JavaScript` which is used by the browser runtime. 
     This means TypeScript is also a dev dependency.
 
-2. Let's create a new npm script called `watch:compile-ts`.  
+2. Let's create a new npm script called `watch:compile-tsc`.  
    Then we fill it with the following content `tsc -w`. 
    The `-w` flag is short for `--watch` and tells `tsc` to run in watch mode.
 
 3. Open up a new terminal window and type `npm run watch:compile-tsc`. 
-   (You might need to open second terminal to run `Saas` and `TypeScript` compilations simultaneously)
+   (You might need to open second terminal to run `Sass` and `TypeScript` compilations simultaneously)
 
 4. This new process compiles our `main.ts` into a `main.js`. Note - by default `tsc` picks up configuration from the `tsconfig.json` file. 
-   Open our webpage (`index.html`) file in the browser. The functionality should work properly!
+   Open our web page (`index.html`) file in the browser. The functionality should work properly!
 
-5. Go back to the `main.ts` and use string concatenation to prefix the title of the hero with "I am"  
+5. Go back to the `main.ts` and use string concatenation to prefix the `heroTitle.innerText` value with "I am"  
    and save it in your editor. 
 
-6. Refresh the webpage in the browser - what happened?
+6. Refresh the web page in the browser - what happened?
 
 ## Combining the watch tasks
 
 As we have realized, currently we have to open two terminals to run both compilations 
-which is inconvenient as we usually edit both TypeScript code and the Saas styles at the same time
+which is inconvenient as we usually edit both TypeScript code and the Sass styles at the same time
 when developing a web application...
  
-1. Saas compilation: `npm run watch:compile-saas` 
+1. Sass compilation: `npm run watch:compile-sass` 
 2. Typescript compilation `npm run watch:compile-tsc`.  
   
 > Wouldn't it be nice to combine those two command in one command and run them in parallel ?
@@ -114,10 +114,10 @@ when developing a web application...
 
 3. Stop previously running processes and run the new watch script from the terminal. `npm run watch`.
 
-4. Open our webpage (`index.html`) file in the browser. The website should work properly!
+4. Open our web page (`index.html`) file in the browser. The website should work properly!
 
 5. Revert the previous changes in the `SCSS` and the TypeScript file and save them both using your editor. 
 
-6. Refresh the webpage in the browser - what happened?
+6. Refresh the web page in the browser - what happened?
 
 #### Awesome, we have created a new `watch` task that allows us to use both TypeScript and SCSS during development.

@@ -34,7 +34,7 @@ To install them run `npm ci`.
 Let's first start by building our `SCSS`.
 
 1. Let's add a `build:scss` script to the npm scripts. 
-   The added script will run use `saas` (already installed) using 
+   The added script will run use `sass` (already installed) using 
    `sass ./styles.scss ./dist/styles.css` instead of just compiling it in current location 
    it will compile it into the `dist/` folder.
 

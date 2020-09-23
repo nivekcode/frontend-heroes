@@ -30,7 +30,7 @@ to track down and fix these bugs.
 
 ### Sass and TypeScript
 
-In this exercise we will enrich our application with Saas and TypeScript.
+In this exercise we will enrich our application with Sass and TypeScript.
 We will learn what does it take to convert CSS to Sass and JavaScript to TypeScript. 
 Furthermore, we are going to learn how to compile Sass to CSS and TypeScript to JavaScript.
 
