@@ -18,7 +18,7 @@ const nextHeroBtn = 'REPLACE_ME';
  */
 const heroImage = 'REPLACE_ME';
 /*
-    TODO 5: Use ocument.querySelector() to query the the element 'hero-title' id
+    TODO 5: Use document.querySelector() to query the the element 'hero-title' id
  */
 const heroTitle = 'REPLACE_ME';
 
