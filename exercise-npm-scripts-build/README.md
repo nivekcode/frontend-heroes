@@ -34,7 +34,7 @@ To install them run `npm ci`.
 Let's first start by building our `SCSS`.
 
 1. Let's add a `build:scss` script to the npm scripts. 
-   The added script will run use `saas` (already installed) using 
+   The added script will run use `sass` (already installed) using 
    `sass ./styles.scss ./dist/styles.css` instead of just compiling it in current location 
    it will compile it into the `dist/` folder.
 
@@ -81,7 +81,7 @@ Luckily, we don't have to process them in any special manner, we just have to co
    into the `dist/` folder using `cpx index.html ./dist`.
 
 3. Next we are going to copy all the images from `assets/` folder.
-   Let's add the following script `"copy:assets": "cpx './assets/*.*' ./dist/assets"` to the npm scripts.
+   Let's add the following script `"copy:assets": "cpx ./assets/*.* ./dist/assets"` to the npm scripts.
 
 4. As in the previous exercise, it would be very nice to group those commands together in one command. 
    What we can do is to add new `copy` command that will run both previously created copy commands. 

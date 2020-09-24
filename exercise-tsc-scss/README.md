@@ -1,4 +1,4 @@
-# TypeScript and Saas
+# TypeScript and Sass
 
 In this exercise we are converting our `CSS` to `SCSS` and our `JavaScript` to  `TypeScript`. 
 We are going to learn what is needed to convert them and what are the benefits. 
@@ -7,7 +7,7 @@ experience and productivity, but they are *never** used directly in runtime.
 
 > Because of this we need to compile them back to `CSS` and `JavaScript` to be able to run them in browsers.
 
-## Saas
+## Sass
 
 Let's start by converting our `SCSS` to `CSS`.
 
