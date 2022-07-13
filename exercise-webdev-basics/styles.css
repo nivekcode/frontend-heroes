@@ -8,10 +8,7 @@ main {
     /* TODO 2: align the items on the cross-axis (vertical) to begin at the start*/
     /* TODO 3: center the content horizontally across the main axis*/
     /* TODO 4: check out the result in the browser*/
-    display: flex;
-    align-items: start;
-    justify-content: center;
-
+    
     background-image: url("assets/background.png");
     height: 100%;
     background-position: center;
@@ -25,10 +22,6 @@ main {
     /* TODO 6: change the flex direction to column */
     /* TODO 7: use align-items to center the flex children */
     /* TODO 8: check out the result in the browser*/
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     margin-top: 50px;
 }
