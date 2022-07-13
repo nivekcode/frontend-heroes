@@ -8,7 +8,7 @@ main {
     /* TODO 2: align the items on the cross-axis (vertical) to begin at the start*/
     /* TODO 3: center the content horizontally across the main axis*/
     /* TODO 4: check out the result in the browser*/
-
+    
     background-image: url("assets/background.png");
     height: 100%;
     background-position: center;
@@ -44,16 +44,16 @@ main {
     box-shadow: 0 0 0 3px #1C8188;
     margin-left: 50px;
     margin-right: 50px;
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
 }
 
 .change-hero-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     font-size: 80px;
     border-radius: 50%;
     color: #FFFFFF;
@@ -69,4 +69,20 @@ main {
 
    - adjust the styles in a way that the button uses a white background and #1C8188 as color*/
 /* TODO 10: check out the result in the browser*/
-/* TODO 11: go back to the README.md and continue with the JavaScript section */
+/* TODO 11: Open up the browser and change the size of the browser window
+    to explore the responsive behaviour of the page*/
+/* TODO 12: We have choosen a mobile first approach,
+    therefore the image and the button look great on mobile,
+     but not so great on Desktop or on Table. Let's change that with the help
+     of some media queries. Let's make the following changes.
+
+     DEVICES bigger than 768px (Medium devices for example Tablets)
+     - .hero-image-container img  -> width and height 300px
+
+     DEVICES bigger than 992px (Large devices for example Desktop)
+     - .hero-image-container img  -> width and height 400px
+     - .change-hero-btn  -> width and height 100px
+     */
+/* TODO 13: Open up the browser and change the size of the browser window.
+    Note how the image and the button changes based on the window size */
+/* TODO 14: go back to the README.md and continue with the JavaScript section */
