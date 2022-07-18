@@ -65,10 +65,12 @@ main {
 }
 
 /* TODO 9: use the ":hover" css pseudo-selector to change the styles when
-   a button  with ".change-hero-btn" class is hovered by the user
+   a button  with ".change-hero-btn" class is hovered by the user. Let's
+   change the background color to white, the border color and the color
+   to #1C8188.
 
    - adjust the styles in a way that the button uses a white background and #1C8188 as color*/
-/* TODO 10: check out the result in the browser*/
+/* TODO 10: check out the result in the browser and hover over a button */
 /* TODO 11: Open up the browser and change the size of the browser window
     to explore the responsive behaviour of the page*/
 /* TODO 12: We have chosen a mobile first approach,
