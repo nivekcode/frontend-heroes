@@ -17,7 +17,7 @@ The only difference is that we want to build to the `dist/` folder instead of th
 As seen in the slides, the `dist/` folder is short for distribution and is a common naming pattern 
 for the output directory that contains code after it was processed by the build process.
 
-
+> In a more sophisticated project the `tsconfig.prod.json` might contain additional configurations.
 
 ## Install the current dependencies
 
@@ -81,7 +81,7 @@ Luckily, we don't have to process them in any special manner, we just have to co
    into the `dist/` folder using `cpx index.html ./dist`.
 
 3. Next we are going to copy all the images from `assets/` folder.
-   Let's add the following script `"copy:assets": "cpx ./assets/*.* ./dist/assets"` to the npm scripts.
+   Let's add the following script `"copy:assets": "cpx ./assets/**/* ./dist/assets"` to the npm scripts.
 
 4. As in the previous exercise, it would be very nice to group those commands together in one command. 
    What we can do is to add new `copy` command that will run both previously created copy commands. 
