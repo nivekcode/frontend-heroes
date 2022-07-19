@@ -54,7 +54,7 @@ Wouldn't it be better if this happened automatically?
 
    We are running the previously generated npm script which will compile our `SCSS` file into a `CSS` file. 
 
-4. Open our web page (`index.html`) file in the browser. The styles should work properly!
+4. Open our web page (`index.html`) file in the browser. Even though, the page is broken (don't worry we will fix this later) the styles should work properly!
 
 5. Change a color in the `SCSS` file and save it in your editor. 
 
@@ -68,7 +68,7 @@ Wouldn't it be better if this happened automatically?
    npm i -D typescript
    ```
 
-    > Remember, `Typescript` code can NOT be executed by the browser, but it is important for developer productivity and experience.
+    > Remember, `Typescript` code can NOT be executed by the browser, but it is important for developer productivity, development experience and quality.
                 
     Because of that, we have to compile it back to `JavaScript` which is used by the browser runtime. 
     This means TypeScript is also a dev dependency.
