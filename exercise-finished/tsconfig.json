@@ -2,8 +2,10 @@
   "compilerOptions": {
     "target": "es5",
     "module": "none",
-    "sourceMap": true
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "types": []
   },
   "include": ["main.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts"],
 }
