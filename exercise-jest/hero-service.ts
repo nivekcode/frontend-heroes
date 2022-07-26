@@ -4,14 +4,11 @@ export interface Hero {
 }
 
 export class HeroService {
-/*
- TODO: Implement the callHero method based on the description inside the hero-service.spec.ts file.
- */
-    callHero(index: number, heroes: Hero[]): string {
-        return `Calling hero ${heroes[index].name}`;
-    }
+    /*
+     TODO: Implement the callHero method based on the description inside the hero-service.spec.ts file.
+     */
 
-/*
- TODO: Implement the calculateHeroMissions method based on the description inside the hero-service.spec.ts file.
- */
+    /*
+     TODO: Implement the calculateHeroMissions method based on the description inside the hero-service.spec.ts file.
+     */
 }
