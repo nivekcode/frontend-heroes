@@ -4,9 +4,9 @@ interface Hero {
 }
 
 const heroes: Hero[] = [
-    {name: 'Batman', image: 'batman.jpeg'},
-    {name: 'Spiderman', image: 'spiderman.jpeg'},
-    {name: 'Superman', image: 'superman.jpeg'}
+    {name: 'Batman', image: 'batman.svg'},
+    {name: 'Spiderman', image: 'spiderman.svg'},
+    {name: 'Superman', image: 'superman.svg'}
 ];
 
 const previousHeroBtn = document.getElementById('previous-hero-btn');

@@ -8,12 +8,14 @@ main {
     /* TODO 2: align the items on the cross-axis (vertical) to begin at the start*/
     /* TODO 3: center the content horizontally across the main axis*/
     /* TODO 4: check out the result in the browser*/
-    
-    background-image: url("assets/background.png");
+
+    background-image: url("assets/background.webp");
     height: 100%;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
@@ -29,7 +31,7 @@ main {
 .hero h1 {
     color: #FFFFFF;
     font-size: 120px;
-    font-family: "Marvel", sans-serif;
+    font-family: "Staatliches", cursive;
     margin-top: 0;
 }
 
@@ -41,9 +43,15 @@ main {
 .hero-image-container img {
     border: 5px solid #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #1C8188;
+    object-fit: cover;
+
     margin-left: 50px;
     margin-right: 50px;
+
+    box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+
     height: 200px;
     width: 200px;
 }
@@ -52,24 +60,25 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
     height: 80px;
     width: 80px;
     font-size: 80px;
     border-radius: 50%;
+
     color: #FFFFFF;
-    border: 2px solid #D9D9D9;
-    background: #1C8188;
-    opacity: 80%;
+    border: 1px solid transparent;
+    background: #0b656b;
     outline: none;
-    cursor: pointer;
 }
 
 /* TODO 9: use the ":hover" css pseudo-selector to change the styles when
    a button  with ".change-hero-btn" class is hovered by the user. Let's
-   change the background color to white, the border color and the color
-   to #1C8188.
+   change the background color to white and the color
+   to #0b656b.
 
-   - adjust the styles in a way that the button uses a white background and #1C8188 as color*/
+   - adjust the styles in a way that the button uses a white background and #0b656b as color*/
 /* TODO 10: check out the result in the browser and hover over a button */
 /* TODO 11: Open up the browser and change the size of the browser window
     to explore the responsive behaviour of the page*/
