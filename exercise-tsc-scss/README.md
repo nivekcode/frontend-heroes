@@ -43,8 +43,6 @@ Let's start by converting our `SCSS` to `CSS`.
 
 #### Great, we successfully converted our `CSS` source code to `SCSS` and compiled it back to `CSS` to be able to run it in the browser !
 
-
-
 ## TypeScript
 
 ## Compile TypeScript to JavaScript
@@ -67,12 +65,7 @@ Let's take advantage and Tpyes. Let's convert our project to `TypeScript`.
 
 6. Check out the showcase which now works again because he references the generated `main.js` file. 
 
-   
-
 #### Great, we successfully converted our `JavaScript ` to `TypeScript` to get all the safety and convenience and compiled it back to `JavaScript` to be able to run it in our browser.
-
-
-
 
 ##### Footnotes
 

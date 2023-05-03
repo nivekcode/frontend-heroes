@@ -1,13 +1,13 @@
 /*
     TODO 1: create a variable for the following colors:
     - $basic-color: #FFFFFF;
-    - $primary-color: #1C8188;
+    - $primary-color: #0b656b;
     - $secondary-color: #D9D9D9;
 */
 
 /*
     TODO 2: Replace all the colors in the files with the variables:
-    - for example color: #FFFFFF becomes color: "$basic-color", #1C8188 becomes "$primary-color" and #D9D9D9 becomes
+    - for example color: #FFFFFF becomes color: "$basic-color", #0b656b becomes "$primary-color" and #D9D9D9 becomes
     "$secondary-color"
  */
 
@@ -20,11 +20,14 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: url("assets/background.png");
+
+    background-image: url("assets/background.webp");
     height: 100%;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
@@ -45,11 +48,11 @@ main {
     "
  */
 .hero h1 {
-    margin-top: 0;
-
     color: #FFFFFF;
     font-size: 120px;
-    font-family: "Marvel", sans-serif;
+
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 50px;
 }
 
 .hero-image-container {
@@ -65,25 +68,33 @@ main {
 .hero-image-container img {
     border: 5px solid #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #1C8188;
+    object-fit: cover;
+
     margin-left: 50px;
     margin-right: 50px;
-    height: 400px;
-    width: 400px;
+
+    box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+
+    height: 250px;
+    width: 250px;
 }
 
 .change-hero-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    cursor: pointer;
+
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
     border-radius: 50%;
+
     color: #FFFFFF;
-    border: 2px solid #D9D9D9;
+    border: 1px solid transparent;
     background: #1C8188;
-    opacity: 80%;
     outline: none;
 }
 

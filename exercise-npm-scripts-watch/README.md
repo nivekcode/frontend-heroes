@@ -121,3 +121,38 @@ when developing a web application...
 6. Refresh the web page in the browser - what happened?
 
 #### Awesome, we have created a new `watch` task that allows us to use both TypeScript and SCSS during development.
+
+## Let's round it up with a start command
+We successfully created a `watch` task that allows us to use both TypeScript and SCSS during development.
+But we still manually have to open and refesh the web page in the browser. Wouldn't it be nice if we could automate this as well?
+
+Let's create a new `npm` script called `start` that runs a small web server with live reloading in combination with  our `watch` task and opens our page in the browser.
+
+1. Let's install `live-server` which is a small web server with live reloading as a dev dependency.
+
+```
+npm i -D live-server
+```
+   
+2. Next we add a `serve` task which runs our `lite-server`. Note that installing `lite-server` also added a binary named `lite-server` to the bin folder in our `node_modules`. 
+
+```
+serve: "lite-server"
+```
+   
+3. Let's create a new `npm` script called `start` that runs the `serve` and the `watch` task in parallel.
+
+```
+start: "npm-run-all -p serve watch"
+```
+
+4. Let's open up a terminal and run our `start` script.
+
+```
+npm run start
+```
+
+5. What happened? The browser should open up and show our page. 
+6. Let's try to change something in the `SCSS` or `TypeScript` file and save it. 
+7. The browser should automatically refresh and show the changes.
+

@@ -7,7 +7,7 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: url("assets/background.png");
+    background-image: url("assets/background.webp");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,11 +22,10 @@ main {
     margin-top: 50px;
 }
 .hero h1 {
-    margin-top: 0;
-
     color: #FFFFFF;
     font-size: 120px;
-    font-family: "Marvel", sans-serif;
+    font-family: "Staatliches", cursive;
+    margin-bottom: 50px;
 }
 
 .hero-image-container {
@@ -36,35 +35,33 @@ main {
 .hero-image-container img {
     border: 5px solid #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #1C8188;
+    object-fit: cover;
     margin-left: 50px;
     margin-right: 50px;
-    height: 400px;
-    width: 400px;
-}
-
-#hero-image {
-    height: 50px;
-    width: 50px;
+    box-shadow: 2px 12px 38px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 12px 38px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 12px 38px -2px rgba(0, 0, 0, 0.75);
+    height: 250px;
+    width: 250px;
 }
 
 .change-hero-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
     border-radius: 50%;
     color: #FFFFFF;
-    border: 2px solid #D9D9D9;
-    background: #1C8188;
-    opacity: 80%;
+    border: 1px solid transparent;
+    background: #0b656b;
     outline: none;
 }
 .change-hero-btn:hover {
     background: #FFFFFF;
-    color: #1C8188;
+    color: #0b656b;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,7 +70,6 @@ main {
         height: 300px;
     }
 }
-
 @media only screen and (min-width: 992px) {
     .hero-image-container img {
         width: 400px;
@@ -85,4 +81,5 @@ main {
         height: 100px;
     }
 }
+
 /*# sourceMappingURL=styles.css.map */
