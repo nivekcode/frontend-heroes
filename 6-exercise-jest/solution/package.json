@@ -1,0 +1,31 @@
+{
+  "name": "exercise-jest",
+  "version": "1.0.0",
+  "description": "Page that displays different heroes",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreuzerk/frontend-heroes.git"
+  },
+  "keywords": [
+    "Frontend",
+    "Workshop"
+  ],
+  "author": "Kevin Kreuzer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kreuzerk/frontend-heroes/issues"
+  },
+  "homepage": "https://github.com/kreuzerk/frontend-heroes#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.9.5"
+  }
+}
