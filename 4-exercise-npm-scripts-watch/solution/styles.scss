@@ -1,0 +1,100 @@
+$basic-color: #FFFFFF;
+$primary-color: #0b656b;
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-image: url("assets/background.webp");
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+
+  h1 {
+    color: $basic-color;
+    font-size: 120px;
+
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 50px;
+  }
+}
+
+.hero-image-container {
+  display: flex;
+  align-items: center;
+
+  img {
+    border: 5px solid $basic-color;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+    box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 12px 38px -2px rgba(0,0,0,0.75);
+
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.change-hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  border-radius: 50%;
+
+  color: $basic-color;
+  border: 1px solid transparent;
+  background: $primary-color;
+  outline: none;
+
+  &:hover {
+    background: $basic-color;
+    color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-image-container img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-image-container img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .change-hero-btn {
+    width: 100px;
+    height: 100px;
+  }
+}
