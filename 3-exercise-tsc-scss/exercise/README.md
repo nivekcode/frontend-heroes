@@ -58,7 +58,7 @@ Let's take advantage and Tpyes. Let's convert our project to `TypeScript`.
 4. Here we use `npx` to run the `tsc` bin from the `TypeScript` package to compile our `TypeScript` file to `JavaScript`. 
 
    ```
-   npx -p typescript tsc main.ts
+   npx -p typescript tsc main.ts --lib es5,dom --module none
    ```
 
 5. This command generates a `main.js`. Note: Some editors don't display this file indvidually, someties an arrow appears next to the `main.ts` that allows you to expand and see the `main.js`. Check out the content of the `main.js`. How does it look like? What happened to our `const` statements?
