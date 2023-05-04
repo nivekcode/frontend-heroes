@@ -4,7 +4,7 @@
     "module": "none",
     "sourceMap": true,
     "skipLibCheck": true,
-    "types": []
+    "types": ["node", "jest"]
   },
   "include": ["main.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"],

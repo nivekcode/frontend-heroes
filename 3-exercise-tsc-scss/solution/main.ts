@@ -9,10 +9,10 @@ const heroes: Hero[] = [
     {name: 'Superman', image: 'superman.svg'}
 ];
 
-const previousHeroBtn = document.getElementById('previous-hero-btn');
-const nextHeroBtn = document.getElementById('next-hero-btn');
-const heroImage = document.getElementById('hero-image') as HTMLImageElement;
-const heroTitle = document.getElementById('hero-title') as HTMLTitleElement;
+const previousHeroBtn = document.querySelector('#previous-hero-btn');
+const nextHeroBtn = document.querySelector('#next-hero-btn');
+const heroImage = document.querySelector('#hero-image') as HTMLImageElement;
+const heroTitle = document.querySelector('#hero-title') as HTMLImageElement;
 
 let selectedHeroIndex = 0;
 
@@ -27,8 +27,12 @@ const selectNextHero = () => {
 }
 
 const updateHero = () => {
-    heroTitle.innerText = heroes[selectedHeroIndex].name;
-    heroImage.src = `./assets/${heroes[selectedHeroIndex].image}`;
+    if(heroTitle) {
+        heroTitle.innerText = heroes[selectedHeroIndex].name;
+    }
+    if(heroImage) {
+        heroImage.src = `./assets/${heroes[selectedHeroIndex].image}`;
+    }
 };
 
 previousHeroBtn?.addEventListener('click', selectPreviousHero);
