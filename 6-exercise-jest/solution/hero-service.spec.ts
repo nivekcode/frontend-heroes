@@ -15,6 +15,19 @@ describe('HeroService', () => {
 
 
     describe('callHero', () => {
+
+        it('should return "No hero at this index" when the index is smaller than 0', () => {
+            expect(
+                sut.callHero(-1, HERO_MOCKS)
+            ).toBe('No hero at this index');
+        });
+
+        it('should return "No hero at this index" when the index is bigger than the amount of heroes', () => {
+            expect(
+                sut.callHero(100, HERO_MOCKS)
+            ).toBe('No hero at this index');
+        });
+
         it('should return "Calling hero Batman" when the index is 0', () => {
             expect(
                 sut.callHero(0, HERO_MOCKS)

@@ -5,8 +5,11 @@ export interface Hero {
 
 export class HeroService {
 
-
     public callHero(index: number, heroes: Hero[]): string {
+        if(index < 0 || index >= heroes.length) {
+            return 'No hero at this index';
+        }
+
         return `Calling hero ${heroes[index].name}`;
     }
 
@@ -20,12 +23,4 @@ export class HeroService {
             return acc;
         }, {});
     }
-
-    /*
-     TODO: Implement the callHero method based on the description inside the hero-service.spec.ts file.
-     */
-
-    /*
-     TODO: Implement the calculateHeroMissions method based on the description inside the hero-service.spec.ts file.
-     */
 }
