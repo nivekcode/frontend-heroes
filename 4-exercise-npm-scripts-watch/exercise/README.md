@@ -134,10 +134,10 @@ Let's create a new `npm` script called `start` that runs a small web server with
 npm i -D live-server
 ```
    
-2. Next we add a `serve` task which runs our `lite-server`. Note that installing `lite-server` also added a binary named `lite-server` to the bin folder in our `node_modules`. 
+2. Next we add a `serve` task which runs our `live-server`. Note that installing `live-server` also added a binary named `lite-server` to the bin folder in our `node_modules`. 
 
 ```
-serve: "lite-server"
+serve: "live-server"
 ```
    
 3. Let's create a new `npm` script called `start` that runs the `serve` and the `watch` task in parallel.
